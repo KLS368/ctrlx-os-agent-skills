@@ -11,7 +11,7 @@ license: Proprietary. LICENSE.txt has complete terms
 ### Axis
 Logical object representing a drive or encoder (abbreviated `axs` in DataLayer). Can be real or **virtual** (simulated - copies setpoints as actual values).
 
-### Drive  
+### Drive
 Fieldbus device that receives setpoints, delivers actual values, and moves machine parts.
 
 ### Encoder
@@ -398,7 +398,7 @@ Motion Kernel must be in `RUNNING` state (global `OPERATION`).
 **Absolute Movement:**
 - Prerequisite: `STANDBY` state
 - Command: CREATE `motion/kin/<name>/cmd/move-abs` with:
-  - `kinPos`: target position as array with 16 elements. One for each dimensions. 
+  - `kinPos`: target position as array with 16 elements. One for each dimensions.
   - `lim`: dynamic limits
   - `coordSys`: Use `WCS` for World Coordinate System.
   - Use `buffered`=`true` to send all movement commands immediately into queue whithout having to wait for the individual movements to complete
