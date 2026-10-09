@@ -1,0 +1,8 @@
+{
+  "name": "ctrlx-automation-skills",
+  "description": "Skills, commands, and agents for ctrlX AUTOMATION workflows",
+  "version": "0.1.0",
+  "author": {
+    "name": "Bosch Rexroth AG"
+  }
+}

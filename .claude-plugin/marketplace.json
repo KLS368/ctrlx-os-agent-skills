@@ -1,0 +1,15 @@
+{
+  "name": "ctrlx-automation-skills-marketplace",
+  "description": "Self-hosted marketplace exposing the ctrlx-automation-skills plugin for Claude Code and GitHub Copilot CLI",
+  "owner": {
+    "name": "Bosch Rexroth AG"
+  },
+  "plugins": [
+    {
+      "name": "ctrlx-automation-skills",
+      "description": "Skills, commands, and agents for ctrlX AUTOMATION workflows",
+      "version": "0.1.0",
+      "source": "./"
+    }
+  ]
+}

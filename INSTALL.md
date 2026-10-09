@@ -7,7 +7,7 @@ This repository is an installable agent skill named `ctrlx`.
 Install from GitHub with the same CLI pattern used by Vercel's skills ecosystem:
 
 ```bash
-npx skills add gmantoha/ctrlx-os-agent-skills \
+npx skills add KLS368/ctrlx-os-agent-skills \
   --skill ctrlx \
   --agent opencode \
   --global \
@@ -20,7 +20,7 @@ The important flag is `--copy`. Do not install this skill as a symlink when the 
 List skills available in this repository:
 
 ```bash
-npx skills add gmantoha/ctrlx-os-agent-skills --list
+npx skills add KLS368/ctrlx-os-agent-skills --list
 ```
 
 Update an installed skill:
@@ -29,12 +29,26 @@ Update an installed skill:
 npx skills update ctrlx --global --yes
 ```
 
+## Plugin installation
+
+The same repository also contains the topic-specific
+`ctrlx-automation-skills` plugin for Claude Code and GitHub Copilot CLI:
+
+```text
+/plugin marketplace add KLS368/ctrlx-os-agent-skills
+/plugin install ctrlx-automation-skills@ctrlx-automation-skills-marketplace
+```
+
+The plugin provides focused skills for 3D Viewer, app management,
+authentication, Data Layer, diagnosis, DRIVE Connect, IDE, Motion, OPC UA,
+Oscilloscope, PLC, Python, and Service Indicator workflows.
+
 ## Local Development
 
 Develop in a normal Git checkout:
 
 ```bash
-git clone https://github.com/gmantoha/ctrlx-os-agent-skills.git
+git clone https://github.com/KLS368/ctrlx-os-agent-skills.git
 cd ctrlx-os-agent-skills
 ```
 

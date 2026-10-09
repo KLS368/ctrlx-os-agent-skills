@@ -65,7 +65,7 @@ This repository is compatible with the open agent skills CLI used by Vercel.
 Install directly from GitHub:
 
 ```bash
-npx skills add gmantoha/ctrlx-os-agent-skills \
+npx skills add KLS368/ctrlx-os-agent-skills \
   --skill ctrlx \
   --agent opencode \
   --global \
@@ -94,3 +94,30 @@ CTRLX_SKILL_AGENT=claude-code npm run skill:install
 ```
 
 See `INSTALL.md` for details and verification steps.
+
+## Plugin installation
+
+This repository also contains the topic-specific `ctrlx-automation-skills`
+plugin for Claude Code and GitHub Copilot CLI. It complements the root `ctrlx`
+skill with focused skills for:
+
+- 3D Viewer, app management, authentication, Data Layer, and Data Layer scopes
+- diagnosis, diagnosis definitions, DRIVE Connect, IDE, and Motion
+- OPC UA Client, OPC UA Server, Oscilloscope, PLC, Python, and Service Indicator
+
+Add the repository as a self-hosted marketplace, then install the plugin:
+
+```text
+/plugin marketplace add KLS368/ctrlx-os-agent-skills
+/plugin install ctrlx-automation-skills@ctrlx-automation-skills-marketplace
+```
+
+For local development or testing, load the checkout directly:
+
+```bash
+claude --plugin-dir /path/to/ctrlx-os-agent-skills
+```
+
+The root `ctrlx` skill and the topic-specific plugin can be installed
+independently; use the root skill for broad routing and the plugin for focused
+ctrlX AUTOMATION topics.
